@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalynt Flow — Legal, Terms of Service & Privacy Policy</title>
+    <meta name="description" content="Official Terms of Service, Privacy Policy, and User Data Deletion compliance documentation for Kalynt Flow Android application.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #070a12;
+            --bg-secondary: #0e1424;
+            --bg-card: #141c30;
+            --bg-elevated: #1a253e;
+            --border-color: #1e2c4a;
+            --border-hover: #334770;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-rose: #ef4444;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.75;
+            padding-bottom: 90px;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        /* Top Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(7, 10, 18, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 14px 24px;
+        }
+
+        .header-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-box {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 19px;
+            color: #fff;
+            box-shadow: 0 0 20px var(--accent-glow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #ffffff 60%, #93c5fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-tag {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* Nav Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 6px;
+            background: var(--bg-secondary);
+            padding: 5px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 8px 18px;
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+            box-shadow: 0 4px 14px var(--accent-glow);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-btn:hover {
+            border-color: var(--accent-blue);
+            background: var(--bg-elevated);
+            color: #93c5fd;
+        }
+
+        /* Hero Banner */
+        .hero {
+            max-width: 1240px;
+            margin: 40px auto 28px auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .hero-badge-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 18px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-emerald);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent-emerald);
+        }
+
+        .hero-badge-text {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #93c5fd;
+            letter-spacing: 0.02em;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 14px;
+            background: linear-gradient(135deg, #ffffff 40%, #bfdbfe 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            max-width: 720px;
+            margin: 0 auto 16px auto;
+            font-size: 1.08rem;
+        }
+
+        .meta-strip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Search & Filter Bar */
+        .search-container {
+            max-width: 720px;
+            margin: 24px auto 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 14px 20px 14px 46px;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 25px var(--accent-glow);
+            background: var(--bg-card);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+
+        /* Quick Stat Highlights */
+        .highlight-grid {
+            max-width: 1240px;
+            margin: 32px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            transition: all 0.2s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+            background: var(--bg-card);
+        }
+
+        .stat-icon-wrap {
+            width: 42px;
+            height: 42px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .stat-icon-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+        .stat-icon-emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+        .stat-icon-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+        .stat-icon-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+
+        .stat-info h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #ffffff;
+        }
+
+        .stat-info p {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            gap: 36px;
+            align-items: start;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: sticky;
+            top: 86px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 22px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-height: calc(100vh - 110px);
+            overflow-y: auto;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .sidebar::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .sidebar-title {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            font-weight: 800;
+        }
+
+        .doc-badge {
+            font-size: 0.72rem;
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #93c5fd;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.88rem;
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s ease;
+            display: block;
+            line-height: 1.4;
+        }
+
+        .toc-list a:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateX(4px);
+        }
+
+        .toc-list a.active {
+            color: #93c5fd;
+            background: rgba(59, 130, 246, 0.12);
+            border-left: 3px solid var(--accent-blue);
+            font-weight: 600;
+        }
+
+        /* Content Container */
+        .content-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: 44px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            min-height: 800px;
+        }
+
+        .document-pane {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .document-pane.active-pane {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 48px;
+            scroll-margin-top: 100px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+
+        .section h2 {
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .copy-anchor {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            border-radius: var(--radius-sm);
+            padding: 4px 8px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .copy-anchor:hover {
+            color: #fff;
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin: 24px 0 12px 0;
+            letter-spacing: -0.01em;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .section ul, .section ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.98rem;
+        }
+
+        .section strong {
+            color: #f1f5f9;
+        }
+
+        /* Callout Boxes */
+        .callout-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 24px 0;
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .callout-box.danger {
+            border-left-color: var(--accent-rose);
+            background: rgba(239, 68, 68, 0.07);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .callout-box.warning {
+            border-left-color: var(--accent-amber);
+            background: rgba(245, 158, 11, 0.07);
+            border-color: rgba(245, 158, 11, 0.2);
+        }
+
+        .callout-box.success {
+            border-left-color: var(--accent-emerald);
+            background: rgba(16, 185, 129, 0.07);
+            border-color: rgba(16, 185, 129, 0.2);
+        }
+
+        .callout-box.purple {
+            border-left-color: var(--accent-purple);
+            background: rgba(139, 92, 246, 0.07);
+            border-color: rgba(139, 92, 246, 0.2);
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Table Styling */
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.92rem;
+        }
+
+        th {
+            background: var(--bg-card);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+            color: #93c5fd;
+        }
+
+        /* Action Buttons & Cards */
+        .action-banner {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .action-banner-text h4 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .action-banner-text p {
+            font-size: 0.9rem;
+            color: #93c5fd;
+            margin: 0;
+        }
+
+        .action-btn-primary {
+            background: var(--accent-blue);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px var(--accent-glow);
+            transition: all 0.2s ease;
+        }
+
+        .action-btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .btn-danger {
+            background: var(--accent-rose);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 1240px;
+            margin: 70px auto 0 auto;
+            padding: 36px 24px 0 24px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 960px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .content-card {
+                padding: 28px 20px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .nav-tabs {
+                width: 100%;
+                overflow-x: auto;
+            }
+            .header-container {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Sticky Navigation Bar -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-group">
+                <div class="logo-box">K</div>
+                <div class="logo-text">
+                    <span class="logo-title">Kalynt Flow</span>
+                    <span class="logo-tag">Trust & Legal Center</span>
+                </div>
+            </a>
+
+            <!-- Central View Switcher -->
+            <nav class="nav-tabs" role="tablist">
+                <button class="tab-btn active" id="tab-btn-terms" onclick="switchView('terms')">
+                    <span>📜</span> Terms of Service
+                </button>
+                <button class="tab-btn" id="tab-btn-privacy" onclick="switchView('privacy')">
+                    <span>🛡️</span> Privacy Policy
+                </button>
+                <button class="tab-btn" id="tab-btn-deletion" onclick="switchView('deletion')">
+                    <span>🗑️</span> Account Deletion
+                </button>
+            </nav>
+
+            <div class="header-actions">
+                <a href="mailto:KalyntFlow@protonmail.com" class="contact-btn">
+                    <span>✉️</span> Support & Moderation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="hero">
+        <div class="hero-badge-wrap">
+            <span class="status-dot"></span>
+            <span class="hero-badge-text">Google Play Developer Policy Compliant & Verified</span>
+        </div>
+        <h1 id="hero-title">Terms of Service</h1>
+        <p id="hero-subtitle">Review the legal terms, acceptable use standards, generative AI guardrails, and privacy policies that govern Kalynt Flow.</p>
+        
+        <div class="meta-strip">
+            <div class="meta-item">
+                <span>App ID:</span>
+                <code>com.aistudio.kalyntflow.app</code>
+            </div>
+            <div class="meta-item">
+                <span>Architecture:</span>
+                <span>Offline-First (Room + Firestore Sync)</span>
+            </div>
+            <div class="meta-item">
+                <span>Effective Date:</span>
+                <span>August 16, 2026</span>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="policy-search" class="search-input" placeholder="Search clauses (e.g., 'AI reporting', 'delete data', 'GitHub token', 'moderation')..." onkeyup="filterContent()">
+        </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <div class="highlight-grid">
+        <div class="stat-card">
+            <div class="stat-icon-wrap stat-icon-blue">🤖</div>
+            <div class="stat-info">
+                <h4>AI Transparency & Flagging</h4>
+                <p>Explicit <code>✦ AI-Generated</code> labeling, in-app output reporting, and dynamic safety guardrail refinement.</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon-wrap stat-icon-emerald">🔒</div>
+            <div class="stat-info">
+                <h4>Offline-First Privacy</h4>
+                <p>Local SQLite Room storage by default. Encrypted TLS 1.3 sync only when signed in with Google/Firebase.</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon-wrap stat-icon-purple">🐙</div>
+            <div class="stat-info">
+                <h4>Client-Side GitHub PAT</h4>
+                <p>Personal Access Tokens reside on-device. Zero third-party intermediary proxying or storage.</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon-wrap stat-icon-amber">🛡️</div>
+            <div class="stat-info">
+                <h4>UGC Safety & 1-Tap Deletion</h4>
+                <p>1-tap message reporting, user blocking, and instant in-app account & data deletion flow.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-layout">
+        
+        <!-- Table of Contents Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">Table of Contents</span>
+                <span class="doc-badge" id="toc-badge">TERMS</span>
+            </div>
+            <ul class="toc-list" id="toc-container">
+                <!-- Injected dynamically based on active tab -->
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-card">
+            
+            <!-- ==========================================
+                 DOCUMENT 1: TERMS OF SERVICE
+            =========================================== -->
+            <div id="pane-terms" class="document-pane active-pane">
+                
+                <section id="terms-acceptance" class="section">
+                    <div class="section-header">
+                        <h2>1. Acceptance of Terms</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-acceptance')">Copy Link</button>
+                    </div>
+                    <p>Welcome to <strong>Kalynt Flow</strong>. These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", or "your") and the developers of Kalynt Flow ("we", "us", or "our") regarding your use of the Kalynt Flow mobile application for Android and related cloud synchronization services.</p>
+                    <p>By downloading, installing, launching, or using Kalynt Flow, you affirm that you have read, understood, and agreed to be bound by these Terms. If you do not agree to these Terms, you must discontinue use and uninstall the application immediately.</p>
+                </section>
+
+                <section id="terms-services" class="section">
+                    <div class="section-header">
+                        <h2>2. Description of Services & Architecture</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-services')">Copy Link</button>
+                    </div>
+                    <p>Kalynt Flow is an offline-first productivity, task orchestration, technical knowledge base, and team workspace application. Key modules include:</p>
+                    <ul>
+                        <li><strong>Hierarchical Workspaces:</strong> Isolated environments for personal, team, or project workflows with scoped member access.</li>
+                        <li><strong>Task & Subtask Orchestration:</strong> Priority tracking (Low, Medium, High, Urgent), due date scheduling, and interactive checklist items.</li>
+                        <li><strong>Rich Markdown Documentation:</strong> Syntax-highlighted notes, custom tagging, and full-text local search.</li>
+                        <li><strong>Visual Calendar:</strong> Time-blocking, agenda views, and task timeline synchronization.</li>
+                        <li><strong>GitHub Client Integration:</strong> Direct client-side repository, commit, and issue inspection via the official GitHub REST API.</li>
+                        <li><strong>Team Workspace Channels:</strong> Real-time group collaboration and channel-based chat.</li>
+                        <li><strong>Context-Aware AI Copilot:</strong> Task automation, summarization, and interactive tool execution.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-accounts" class="section">
+                    <div class="section-header">
+                        <h2>3. User Accounts & Security</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-accounts')">Copy Link</button>
+                    </div>
+                    <p>Core local productivity tools operate without requiring an online account. Online cloud synchronization, shared team workspaces, and Pro features require authentication via:</p>
+                    <ul>
+                        <li><strong>Google Sign-In:</strong> Secure authentication facilitated by Android Jetpack Credential Manager.</li>
+                        <li><strong>Email/Password:</strong> Authentication processed securely through Google Firebase Auth.</li>
+                    </ul>
+                    <p>You agree to maintain the confidentiality of your account credentials and accept full responsibility for all activities conducted under your authenticated profile.</p>
+                </section>
+
+                <section id="terms-ugc" class="section">
+                    <div class="section-header">
+                        <h2>4. User Content & UGC Zero-Tolerance Policy</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-ugc')">Copy Link</button>
+                    </div>
+                    <p>Kalynt Flow allows users to create notes, organize tasks, and post messages in shared workspace channels. You retain full ownership of the intellectual property you generate.</p>
+                    
+                    <div class="callout-box danger">
+                        <div class="callout-title">Zero-Tolerance Objectionable Content Policy</div>
+                        <p>In compliance with Google Play Developer Policies, we strictly prohibit the transmission, posting, or dissemination of objectionable content, including:</p>
+                        <ul style="margin-top: 8px;">
+                            <li>Hate speech, harassment, stalking, or incitement of violence against individuals or groups.</li>
+                            <li>Sexually explicit, pornographic, or non-consensual imagery.</li>
+                            <li>Defamatory, fraudulent, deceptive, or misleading claims.</li>
+                            <li>Distribution of malware, ransomware, or unauthorized tracking payloads.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="terms-moderation" class="section">
+                    <div class="section-header">
+                        <h2>5. Content Moderation, Reporting & User Blocking</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-moderation')">Copy Link</button>
+                    </div>
+                    <p>To ensure user safety across collaborative workspaces, Kalynt Flow implements strict community moderation features:</p>
+                    <ul>
+                        <li><strong>1-Tap In-App Content Reporting:</strong> Any message in team channels can be flagged using the <strong>Report Message</strong> action. Reports are immediately logged to Firestore and routed to human moderators at <code>KalyntFlow@protonmail.com</code>.</li>
+                        <li><strong>User Blocking:</strong> You can block any member directly from their profile or chat view. Blocked members are saved to your local Room database and filtered out of all workspace channels immediately.</li>
+                        <li><strong>Enforcement:</strong> We reserve the right to suspend, mute, or permanently delete accounts found in violation of our Community Guidelines.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-ai" class="section">
+                    <div class="section-header">
+                        <h2>6. Generative AI Safety, Transparency & Disclaimers</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-ai')">Copy Link</button>
+                    </div>
+                    
+                    <div class="callout-box purple">
+                        <div class="callout-title">Explicit AI Transparency & Disclosure</div>
+                        <p>All AI-generated responses are explicitly identified within the interface with a <code>✦ AI-Generated Response</code> badge and persistent disclosure banner.</p>
+                    </div>
+
+                    <h3>In-App AI Output Flagging & Continuous Safety Refinement</h3>
+                    <ul>
+                        <li><strong>Dedicated Reporting Flow:</strong> Users can report any AI output directly via the <strong>Flag AI Output</strong> dialog for factual inaccuracies, offensive language, or policy violations.</li>
+                        <li><strong>Dynamic Safety Filters:</strong> Reported outputs generate active guardrails that are automatically injected into subsequent model prompts to prevent recurring issues.</li>
+                        <li><strong>Filter Control:</strong> Users can inspect, toggle, or delete active guardrail rules anytime via the in-app AI Safety Filter Sheet.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-github" class="section">
+                    <div class="section-header">
+                        <h2>7. GitHub Integration & PAT Security</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-github')">Copy Link</button>
+                    </div>
+                    <p>When you supply a GitHub Personal Access Token (PAT):</p>
+                    <ul>
+                        <li>Tokens are stored strictly on your local device in sandboxed encrypted storage.</li>
+                        <li>All API calls communicate directly between your device and <code>api.github.com</code> over TLS.</li>
+                        <li>We do not store, proxy, or harvest your GitHub tokens on any proprietary backend servers.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-billing" class="section">
+                    <div class="section-header">
+                        <h2>8. In-App Purchases & Google Play Billing</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-billing')">Copy Link</button>
+                    </div>
+                    <p>Subscriptions and in-app purchases (Pro Monthly, Pro Annual, Lifetime Access) are processed securely through the official <strong>Google Play Billing Library</strong>.</p>
+                    <ul>
+                        <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically unless cancelled via Google Play Store subscriptions at least 24 hours prior to the current billing period's expiration.</li>
+                        <li><strong>Refunds:</strong> Refund processing is subject to Google Play Store standard refund policies.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-liability" class="section">
+                    <div class="section-header">
+                        <h2>9. Disclaimers & Limitation of Liability</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-liability')">Copy Link</button>
+                    </div>
+                    <p>Kalynt Flow is provided on an "AS IS" and "AS AVAILABLE" basis. To the maximum extent permitted by applicable law, we disclaim all warranties, express or implied, including merchantability, non-infringement, and fitness for a particular purpose.</p>
+                </section>
+
+                <section id="terms-contact" class="section">
+                    <div class="section-header">
+                        <h2>10. Contact & Legal Notices</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('terms-contact')">Copy Link</button>
+                    </div>
+                    <div class="callout-box">
+                        <p><strong>Primary Support & Moderation:</strong> <a href="mailto:KalyntFlow@protonmail.com" style="color: #93c5fd;">KalyntFlow@protonmail.com</a></p>
+                        <p><strong>Developer:</strong> <a href="mailto:hermeslekkasdev@gmail.com" style="color: #93c5fd;">hermeslekkasdev@gmail.com</a></p>
+                        <p><strong>Application Package:</strong> <code>com.aistudio.kalyntflow.app</code></p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- ==========================================
+                 DOCUMENT 2: PRIVACY POLICY
+            =========================================== -->
+            <div id="pane-privacy" class="document-pane">
+                
+                <section id="priv-intro" class="section">
+                    <div class="section-header">
+                        <h2>1. Privacy Commitment & Architecture</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-intro')">Copy Link</button>
+                    </div>
+                    <p>At <strong>Kalynt Flow</strong>, we believe privacy is an engineering fundamental. Our application is engineered from the ground up on an <strong>Offline-First architecture</strong>. Your tasks, Markdown notes, calendar events, and workspace organizational trees are stored in an on-device Android Room SQLite database on your device first.</p>
+                    <p>We do not track your physical location, do not harvest private contact books, and never sell or monetize your personal data with third-party advertisers or brokers.</p>
+                </section>
+
+                <section id="priv-collection" class="section">
+                    <div class="section-header">
+                        <h2>2. Data Collection & Processing Breakdown</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-collection')">Copy Link</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data Category</th>
+                                    <th>Storage Location</th>
+                                    <th>Encryption Status</th>
+                                    <th>Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Tasks & Subtasks</strong></td>
+                                    <td>Local Room Database / Cloud Firestore</td>
+                                    <td>TLS 1.3 in Transit, Sandboxed at Rest</td>
+                                    <td>Task orchestration and synchronization</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Markdown Notes</strong></td>
+                                    <td>Local Room Database / Cloud Firestore</td>
+                                    <td>TLS 1.3 in Transit, Sandboxed at Rest</td>
+                                    <td>Documentation and technical knowledge base</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Calendar Events</strong></td>
+                                    <td>Local Room Database / Cloud Firestore</td>
+                                    <td>TLS 1.3 in Transit, Sandboxed at Rest</td>
+                                    <td>Time-blocking and schedule conflict checks</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>User Profile (Name, Email)</strong></td>
+                                    <td>Firebase Authentication / Firestore</td>
+                                    <td>TLS 1.3 Encrypted</td>
+                                    <td>Account identity, sync, and team collaboration</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GitHub PAT Token</strong></td>
+                                    <td>Local Encrypted Device Storage Only</td>
+                                    <td>On-Device Sandboxed</td>
+                                    <td>Direct GitHub REST API calls</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="priv-permissions" class="section">
+                    <div class="section-header">
+                        <h2>3. Android Permissions & Justification</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-permissions')">Copy Link</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Type</th>
+                                    <th>Reason / Justification</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>android.permission.INTERNET</code></td>
+                                    <td>Standard</td>
+                                    <td>Required for Cloud Firestore sync, Firebase Authentication, GitHub API requests, and AI Copilot responses.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                                    <td>Standard</td>
+                                    <td>Enables automatic seamless switching between offline local Room storage and online Firestore sync.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>android.permission.CAMERA</code></td>
+                                    <td>Optional / Runtime</td>
+                                    <td>Used solely if the user opens the in-app document or QR code scanner. Camera frames are processed in-memory and never uploaded to remote servers without explicit user confirmation.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="priv-ai" class="section">
+                    <div class="section-header">
+                        <h2>4. Generative AI Data Handling & Privacy</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-ai')">Copy Link</button>
+                    </div>
+                    <p>When you send prompts or request tool executions through the Kalynt Flow AI Copilot:</p>
+                    <ul>
+                        <li><strong>Scoped Context Only:</strong> Only metadata strictly necessary to fulfill your request (e.g., active task title or current note body) is transmitted to the AI endpoint over TLS 1.3.</li>
+                        <li><strong>No Foundation Model Training:</strong> Your private workspace content, personal notes, and team conversations are never used to train public foundation models.</li>
+                        <li><strong>User Flagging Feedback:</strong> User-submitted reports from the <strong>Flag AI Output</strong> dialog are logged with anonymized timestamps to update local runtime safety filters.</li>
+                    </ul>
+                </section>
+
+                <section id="priv-subprocessors" class="section">
+                    <div class="section-header">
+                        <h2>5. Third-Party Service Providers (Subprocessors)</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-subprocessors')">Copy Link</button>
+                    </div>
+                    <p>We work with trusted enterprise service providers:</p>
+                    <ul>
+                        <li><strong>Google Cloud & Firebase:</strong> Authentication and Cloud Firestore real-time database.</li>
+                        <li><strong>Google Play Billing:</strong> In-app purchase and subscription verification.</li>
+                        <li><strong>GitHub API (Optional):</strong> Direct user-initiated repository sync.</li>
+                    </ul>
+                </section>
+
+                <section id="priv-security" class="section">
+                    <div class="section-header">
+                        <h2>6. Security Protections & Safeguards</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-security')">Copy Link</button>
+                    </div>
+                    <p>All network communications utilize TLS 1.3 / HTTPS encryption. On-device records are stored within Android's sandboxed private storage directory. Firestore database rules restrict read and write access strictly to authorized workspace owners.</p>
+                </section>
+
+                <section id="priv-contact" class="section">
+                    <div class="section-header">
+                        <h2>7. Privacy Contact</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('priv-contact')">Copy Link</button>
+                    </div>
+                    <div class="callout-box success">
+                        <p>For data inquiries, GDPR/CCPA requests, or privacy concerns, contact our Data Protection representative directly at <a href="mailto:KalyntFlow@protonmail.com" style="color: #6ee7b7; font-weight: bold;">KalyntFlow@protonmail.com</a>.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- ==========================================
+                 DOCUMENT 3: ACCOUNT & DATA DELETION
+            =========================================== -->
+            <div id="pane-deletion" class="document-pane">
+                
+                <section id="del-overview" class="section">
+                    <div class="section-header">
+                        <h2>1. User Data & Account Deletion Policy</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('del-overview')">Copy Link</button>
+                    </div>
+                    <p>In accordance with Google Play's User Data & Account Deletion Policy, users of Kalynt Flow have complete autonomy over their data. You have the unconditional right to delete your account, local files, and all synchronized cloud records at any time.</p>
+                </section>
+
+                <section id="del-how-to" class="section">
+                    <div class="section-header">
+                        <h2>2. How to Delete Your Account & All Personal Data</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('del-how-to')">Copy Link</button>
+                    </div>
+
+                    <div class="callout-box danger">
+                        <div class="callout-title">Method A: Instant 1-Tap In-App Deletion (Recommended)</div>
+                        <p>You can purge your entire digital footprint directly from within the Android application in seconds:</p>
+                        <ol style="margin-top: 10px;">
+                            <li>Open the <strong>Kalynt Flow</strong> app on your Android device.</li>
+                            <li>Open the left navigation drawer and tap <strong>Safety & Policies</strong>.</li>
+                            <li>Click the red <strong>Delete Account & All Personal Data</strong> button.</li>
+                            <li>Confirm the dialog prompt.</li>
+                        </ol>
+                    </div>
+
+                    <div class="callout-box warning">
+                        <div class="callout-title">Method B: Manual Deletion Request via Email</div>
+                        <p>If you have uninstalled the application or cannot access your device, you may submit a manual data purge request:</p>
+                        <p style="margin-top: 8px;">Send an email from your registered account address to <strong>KalyntFlow@protonmail.com</strong> with the subject line <code>"Data Deletion Request"</code>. All associated cloud records will be purged within 48 hours.</p>
+                    </div>
+                </section>
+
+                <section id="del-data-purged" class="section">
+                    <div class="section-header">
+                        <h2>3. What Data Is Permanently Purged</h2>
+                        <button class="copy-anchor" onclick="copySectionLink('del-data-purged')">Copy Link</button>
+                    </div>
+                    <p>When an account deletion is initiated, the following data is permanently purged with no possibility of recovery:</p>
+                    <ul>
+                        <li><strong>Local On-Device Database:</strong> All Room database tables (tasks, subtasks, notes, calendar events, workspaces, chat history, and blocked user lists).</li>
+                        <li><strong>Cloud Firestore Records:</strong> All user documents, workspace memberships, and synced objects.</li>
+                        <li><strong>Authentication Credentials:</strong> Your Firebase Auth profile and Google Sign-In session tokens.</li>
+                    </ul>
+                </section>
+
+                <div class="action-banner">
+                    <div class="action-banner-text">
+                        <h4>Need Immediate Assistance with Data Removal?</h4>
+                        <p>Our security and compliance team is available 24/7 to process manual data removal requests.</p>
+                    </div>
+                    <a href="mailto:KalyntFlow@protonmail.com?subject=Data%20Deletion%20Request" class="action-btn-primary btn-danger">
+                        <span>✉️</span> Request Data Deletion
+                    </a>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>&copy; 2026 Kalynt Flow. All rights reserved. Package: <code>com.aistudio.kalyntflow.app</code></div>
+        <div class="footer-links">
+            <a href="#" onclick="switchView('terms'); return false;">Terms of Service</a>
+            <a href="#" onclick="switchView('privacy'); return false;">Privacy Policy</a>
+            <a href="#" onclick="switchView('deletion'); return false;">Account Deletion</a>
+            <a href="mailto:KalyntFlow@protonmail.com">Contact Support</a>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        const tocData = {
+            terms: [
+                { id: 'terms-acceptance', label: '1. Acceptance of Terms' },
+                { id: 'terms-services', label: '2. Description of Services' },
+                { id: 'terms-accounts', label: '3. Accounts & Security' },
+                { id: 'terms-ugc', label: '4. UGC Zero-Tolerance Policy' },
+                { id: 'terms-moderation', label: '5. Moderation & User Blocking' },
+                { id: 'terms-ai', label: '6. Generative AI Safety & Guardrails' },
+                { id: 'terms-github', label: '7. GitHub Integration & PAT' },
+                { id: 'terms-billing', label: '8. In-App Purchases & Billing' },
+                { id: 'terms-liability', label: '9. Limitation of Liability' },
+                { id: 'terms-contact', label: '10. Contact & Legal Notices' }
+            ],
+            privacy: [
+                { id: 'priv-intro', label: '1. Privacy Commitment & Offline-First' },
+                { id: 'priv-collection', label: '2. Data Collection & Processing' },
+                { id: 'priv-permissions', label: '3. Android Permissions Breakdown' },
+                { id: 'priv-ai', label: '4. Generative AI Data Handling' },
+                { id: 'priv-subprocessors', label: '5. Subprocessors & Cloud Storage' },
+                { id: 'priv-security', label: '6. Security Protections & Safeguards' },
+                { id: 'priv-contact', label: '7. Privacy Contact' }
+            ],
+            deletion: [
+                { id: 'del-overview', label: '1. Deletion Rights Overview' },
+                { id: 'del-how-to', label: '2. Step-by-Step Deletion Methods' },
+                { id: 'del-data-purged', label: '3. What Data Is Permanently Purged' }
+            ]
+        };
+
+        function switchView(tab) {
+            // Update Tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById(`tab-btn-${tab}`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            // Update Panes
+            document.querySelectorAll('.document-pane').forEach(pane => pane.classList.remove('active-pane'));
+            const activePane = document.getElementById(`pane-${tab}`);
+            if (activePane) activePane.classList.add('active-pane');
+
+            // Update Hero Headers
+            const heroTitle = document.getElementById('hero-title');
+            const heroSub = document.getElementById('hero-subtitle');
+            const tocBadge = document.getElementById('toc-badge');
+
+            if (tab === 'terms') {
+                heroTitle.innerText = 'Terms of Service';
+                heroSub.innerText = 'Review the legal terms, acceptable use standards, generative AI guardrails, and privacy policies that govern Kalynt Flow.';
+                tocBadge.innerText = 'TERMS';
+            } else if (tab === 'privacy') {
+                heroTitle.innerText = 'Privacy Policy';
+                heroSub.innerText = 'Learn how Kalynt Flow manages local device storage, encrypted cloud sync, AI data handling, and user privacy protection.';
+                tocBadge.innerText = 'PRIVACY';
+            } else if (tab === 'deletion') {
+                heroTitle.innerText = 'User Data & Account Deletion';
+                heroSub.innerText = 'Clear instructions and mechanisms for completely deleting your account, local records, and synced cloud data.';
+                tocBadge.innerText = 'DELETION';
+            }
+
+            // Update Sidebar TOC
+            const tocContainer = document.getElementById('toc-container');
+            tocContainer.innerHTML = '';
+            (tocData[tab] || []).forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = `#${item.id}`;
+                a.innerText = item.label;
+                li.appendChild(a);
+                tocContainer.appendChild(li);
+            });
+
+            // Scroll smoothly to top of content
+            window.scrollTo({ top: 120, behavior: 'smooth' });
+        }
+
+        function filterContent() {
+            const query = document.getElementById('policy-search').value.toLowerCase();
+            const activePane = document.querySelector('.document-pane.active-pane');
+            if (!activePane) return;
+
+            const sections = activePane.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const text = sec.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    sec.style.display = 'block';
+                } else {
+                    sec.style.display = 'none';
+                }
+            });
+        }
+
+        function copySectionLink(sectionId) {
+            const url = window.location.origin + window.location.pathname + '#' + sectionId;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('Section link copied to clipboard!');
+            }).catch(() => {
+                prompt('Copy this link:', url);
+            });
+        }
+
+        // Initialize TOC on load
+        document.addEventListener('DOMContentLoaded', () => {
+            switchView('terms');
+            
+            // Check hash in URL
+            const hash = window.location.hash.replace('#', '');
+            if (hash.startsWith('priv')) {
+                switchView('privacy');
+                setTimeout(() => {
+                    const el = document.getElementById(hash);
+                    if (el) el.scrollIntoView();
+                }, 200);
+            } else if (hash.startsWith('del')) {
+                switchView('deletion');
+                setTimeout(() => {
+                    const el = document.getElementById(hash);
+                    if (el) el.scrollIntoView();
+                }, 200);
+            }
+        });
+    </script>
+</body>
+</html>
