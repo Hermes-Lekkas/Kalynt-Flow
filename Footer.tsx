@@ -1,6 +1,7 @@
 import React from 'react';
 import { Translation } from '../i18n';
 import { motion } from 'motion/react';
+import kalyntIcon from '../assets/Kalynt_Flow_Icon.png';
 import { Mail, Shield, FileText, UserX } from 'lucide-react';
 
 interface FooterProps {
@@ -18,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ t, setActiveDoc }) => {
           <div className="space-y-1.5">
             <div className="flex items-center gap-2.5">
               <img 
-                src="/Kalynt_Flow_Icon.png" 
+                src={kalyntIcon} 
                 alt="Kalynt Flow" 
                 className="w-7 h-7 rounded-lg object-contain"
                 onError={(e) => {
