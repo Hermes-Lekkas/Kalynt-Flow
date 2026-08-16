@@ -1,0 +1,7 @@
+{
+  "name": "Kalynt Flow Legal & Privacy Center",
+  "description": "Google-inspired, clean, accessible terms of service, privacy policy, and user data deletion compliance portal for Kalynt Flow Android app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
