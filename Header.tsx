@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Translation, availableLanguages, LanguageInfo } from '../i18n';
 import { motion, AnimatePresence } from 'motion/react';
+import kalyntIcon from '../assets/Kalynt_Flow_Icon.png';
 import { 
   Sun, 
   Moon, 
@@ -83,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({
             <motion.img 
               whileHover={{ scale: 1.06, rotate: 2 }}
               whileTap={{ scale: 0.95 }}
-              src="/Kalynt_Flow_Icon.png" 
+              src={kalyntIcon} 
               alt="Kalynt Flow" 
               className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl shadow-xs shrink-0 object-contain cursor-pointer"
               onError={(e) => {
@@ -296,4 +297,3 @@ export const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
-
