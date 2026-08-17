@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Translation, availableLanguages, LanguageInfo } from '../i18n';
+import { Translation, availableLanguages, LanguageInfo } from './index';
 import { motion, AnimatePresence } from 'motion/react';
-import kalyntIcon from '../assets/Kalynt_Flow_Icon.png';
+import kalyntIcon from './Kalynt_Flow_Icon.png';
 import { 
   Sun, 
   Moon, 

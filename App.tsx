@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { getTranslation, Translation, Section } from './i18n';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Pillars } from './components/Pillars';
-import { SidebarTOC } from './components/SidebarTOC';
-import { TermsDocument } from './components/TermsDocument';
-import { PrivacyDocument } from './components/PrivacyDocument';
-import { DeletionDocument } from './components/DeletionDocument';
-import { Footer } from './components/Footer';
-import { Toast } from './components/Toast';
+import { getTranslation, Translation, Section } from './index';
+import { Header } from './Header';
+import { Hero } from './Hero';
+import { Pillars } from './Pillars';
+import { SidebarTOC } from './SidebarTOC';
+import { TermsDocument } from './TermsDocument';
+import { PrivacyDocument } from './PrivacyDocument';
+import { DeletionDocument } from './DeletionDocument';
+import { Footer } from './Footer';
+import { Toast } from './Toast';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUp } from 'lucide-react';
 

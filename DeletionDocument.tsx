@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Translation, Section } from '../i18n';
+import { Translation, Section } from './index';
 import { SectionCard, FAQAccordion } from './SectionCard';
 import { motion } from 'motion/react';
 import { Mail, Copy, Check, Send } from 'lucide-react';

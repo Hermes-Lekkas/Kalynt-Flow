@@ -1,7 +1,7 @@
 import React from 'react';
-import { Translation } from '../i18n';
+import { Translation } from './index';
 import { motion } from 'motion/react';
-import kalyntIcon from '../assets/Kalynt_Flow_Icon.png';
+import kalyntIcon from './Kalynt_Flow_Icon.png';
 import { Mail, Shield, FileText, UserX } from 'lucide-react';
 
 interface FooterProps {

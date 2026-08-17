@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Section, Translation } from '../i18n';
+import { Section, Translation } from './index';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Link2, 

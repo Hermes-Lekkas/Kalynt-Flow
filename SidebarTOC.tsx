@@ -1,5 +1,5 @@
 import React from 'react';
-import { Translation, Section } from '../i18n';
+import { Translation, Section } from './index';
 import { motion } from 'motion/react';
 import { ListTree, ChevronRight } from 'lucide-react';
 

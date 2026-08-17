@@ -1,5 +1,5 @@
 import React from 'react';
-import { Translation } from '../i18n';
+import { Translation } from './index';
 import { motion } from 'motion/react';
 import { Database, Sparkles, ShieldAlert, UserX, ArrowUpRight } from 'lucide-react';
 
